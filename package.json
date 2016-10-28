@@ -1,14 +1,14 @@
 {
   "name": "formidable-charts-docs",
   "version": "0.0.2",
-  "description": "Documentation site for Victory",
+  "description": "Documentation site for Formidable Charts",
   "main": "webpack.config.dev.js",
   "scripts": {
     "start": "builder run dev",
     "test": "builder run lint",
     "dev": "webpack-dev-server --port 3000 --config node_modules/builder-docs-archetype/config/webpack/webpack.config.dev.js --history-api-fallback",
-    "update-project": "npm update victory",
-    "server-static-prod": "ecstatic --port 8080 --baseDir /open-source/victory build",
+    "update-project": "npm update formidable-charts && npm update victory-docs",
+    "server-static-prod": "ecstatic --port 8080 --baseDir /open-source/formidable-charts build",
     "test-func-static-prod": "TEST_FUNC_BASE_DIR=/open-source/victory builder run test-func-static"
   },
   "repository": {
@@ -48,7 +48,7 @@
     "react-router-scroll": "^0.2.0",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
-    "victory-docs": "FormidableLabs/victory-docs#feature-abstractEntry",
+    "victory-docs": "FormidableLabs/victory-docs",
     "victory": "*"
   }
 }
