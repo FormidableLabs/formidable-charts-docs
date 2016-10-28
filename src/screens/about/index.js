@@ -26,6 +26,11 @@ class About extends React.Component {
             <iframe src="https://ghbtns.com/github-btn.html?user=formidablelabs&repo=formidable-charts&type=fork&count=true&size=large" frameBorder="0" scrolling="0" width="158px" height="30px"></iframe>
           </p>
 
+          <p>
+            <a href="https://github.com/FormidableLabs/formidable-charts/graphs/contributors">
+              See contributors to FormidableCharts <Icon glyph="external-link" />
+            </a>
+          </p>
           <h1>
             About Formidable
           </h1>

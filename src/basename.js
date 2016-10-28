@@ -1,3 +1,2 @@
-// TODO: UPDATE_FOR_CHARTS
-const basename = process.env.NODE_ENV === "production" ? "/open-source/victory" : "";
+const basename = process.env.NODE_ENV === "production" ? "/open-source/formidable-charts" : "";
 export default basename;
