@@ -24,10 +24,8 @@ class Home extends React.Component {
           <h3>Themed</h3>
             <p>Give all of your charts a consistent look with our easy, built-in themes. Spend less time styling, more time building.</p>
           <h3>Native</h3>
-            <p>
-              Extend the FormidableCharts experience on iOS or Android platforms.
-               <code>npm install -native formidable-charts react-native-svg --save</code>
-            </p>
+            <p>Extend the FormidableCharts experience on iOS or Android platforms with an identical API.</p>
+            <code>npm install -native formidable-charts react-native-svg --save</code>
         </section>
         <Footer
           style={{
