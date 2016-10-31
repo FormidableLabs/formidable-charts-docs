@@ -1,6 +1,6 @@
 {
   "name": "formidable-charts-docs",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Documentation site for Formidable Charts",
   "main": "webpack.config.dev.js",
   "scripts": {
