@@ -1,4 +1,4 @@
-[FormidableCharts Documentation Site](https://formidable.com/open-source/formidable-charts/)
+FormidableCharts documentation site
 ======================
 
 [![Build Status](https://travis-ci.org/FormidableLabs/formidable-charts-docs.svg?branch=master)](https://travis-ci.org/FormidableLabs/formidable-charts-docs)
