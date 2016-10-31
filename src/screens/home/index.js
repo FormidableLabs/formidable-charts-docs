@@ -12,7 +12,7 @@ class Home extends React.Component {
       <TitleMeta title="FormidableCharts">
         <Header home />
         <section className="Home playgroundsMaxHeight">
-          <h2>Quick, composed React charts out of the box</h2>
+          <h2>Quick and robust charts out of the box</h2>
           <code>npm install formidable-charts</code>
           <p>
             <iframe title="Stars on GitHub" src="https://ghbtns.com/github-btn.html?user=formidablelabs&repo=formidable-charts&type=star&count=true" frameBorder="0" scrolling="0" width="90px" height="20px"></iframe>
