@@ -1,0 +1,24 @@
+@import "victory-docs/src/styles/styles.css";
+
+/* Overrides */
+
+#content > div { /* Enable sticky footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.Home {
+  flex: 1 0 auto; /* Enable sticky footer */
+  margin: 0 auto;
+  padding: 0 var(--page) var(--gutter);
+}
+
+@media (--medium-viewport) {
+  .medium-Grid--1of2 > .Grid-cell {
+      flex: 0 0 50%;
+  }
+}
+
+.u-textRight {
+  text-align: right !important;
+}

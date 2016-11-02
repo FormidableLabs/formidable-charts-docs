@@ -12,20 +12,61 @@ class Home extends React.Component {
       <TitleMeta title="FormidableCharts">
         <Header home />
         <section className="Home playgroundsMaxHeight">
-          <h2>Quick and robust charts out of the box</h2>
-          <code>npm install formidable-charts</code>
-          <p>
-            <iframe title="Stars on GitHub" src="https://ghbtns.com/github-btn.html?user=formidablelabs&repo=formidable-charts&type=star&count=true" frameBorder="0" scrolling="0" width="90px" height="20px"></iframe>
-          </p>
-          {/* example gif added here once Ken has some updated ones in docs... or use component playground?*/}
-          <h3>Composed</h3>
-            <p>Build the charts you need quickly without the hassle of fitting the pieces together yourself. FormidableCharts offers
-             composed Line, Area, Bar, Pie, and Scatter charts. Use in your React project, or in other Javascript projects using our Standalone wrapper.</p>
-          <h3>Themed</h3>
-            <p>Give all of your charts a consistent look with our easy, built-in themes. Spend less time styling, more time building.</p>
-          <h3>Native</h3>
-            <p>Extend the FormidableCharts experience on iOS or Android platforms with an identical API.</p>
-            <code>npm install -native formidable-charts react-native-svg --save</code>
+          <h1 className="Heading">
+            Quick and robust charts out of the box
+          </h1>
+          <div className="u-padding">
+            <div className="Grid Grid--gutters Grid--full medium-Grid--fit u-textLarge">
+              <div className="Grid-cell Grid-cell--autoSize">
+                <h2 className="SubHeading u-textRight u-noMargin">
+                  Why FormidableCharts?
+                </h2>
+              </div>
+              <div className="Grid-cell">
+                <p className="u-noMargin">
+                  FormidableCharts offers composed Line, Area, Bar, Pie, and Scatter charts. Use in your React project, or in other Javascript projects using our Standalone wrapper.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="Installer">
+            <code className="Installer-code">
+              npm install formidable-charts
+            </code>
+          </div>
+          <div className="Installer">
+            <code className="Installer-code">
+              npm install -native formidable-charts react-native-svg --save
+            </code>
+          </div>
+          {/*
+            TODO: example gif added here once Ken has some updated ones in docs... or use component playground?
+            https://github.com/FormidableLabs/formidable-charts-docs/issues/20
+          */}
+          <div className="Container">
+            <div className="u-paddingSm">
+              <div className="Grid Grid--gutters Grid--full medium-Grid--1of3">
+                <div className="Grid-cell u-textCenter">
+                  <h3>Composed</h3>
+                  <p>
+                    Build the charts you need quickly without the hassle of fitting the pieces together yourself.
+                  </p>
+                </div>
+                <div className="Grid-cell u-textCenter">
+                  <h3>Themed</h3>
+                  <p>
+                    Give all of your charts a consistent look with our easy, built-in themes. Spend less time styling, more time building.
+                  </p>
+                </div>
+                <div className="Grid-cell u-textCenter">
+                  <h3>Native</h3>
+                  <p>
+                    Extend the FormidableCharts experience on iOS or Android platforms with an identical API.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <Footer
           style={{

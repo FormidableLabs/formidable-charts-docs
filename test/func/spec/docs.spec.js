@@ -10,10 +10,6 @@ var validateRelative = function (abs) {
     var rel = abs.substr(global.TEST_FUNC_BASE_URL.length);
     // strip query/hash out
     rel = rel.split(/[?#]/)[0];
-    // trim trailing slash
-    if (rel !== "/" && rel[rel.length - 1] === "/") {
-      rel = rel.substr(0, rel.length - 1);
-    }
     // throw a helpful error if it's not in static-routes
     if (routes.indexOf(rel) < 0) {
       throw new Error(rel + " not a valid relative link");
@@ -24,7 +20,7 @@ var validateRelative = function (abs) {
 describe("About", function () {
   it("should render a page with proper title", function () {
     return adapter.client
-      .url("/about")
+      .url("/about/")
       .getTitle().then(function (title) {
         expect(title).to.eq("FormidableCharts | About");
       });
@@ -32,11 +28,11 @@ describe("About", function () {
 });
 
 describe("Docs", function () {
-  it.skip("should render a page with proper title", function () {
+  it("should render a page with proper title", function () {
     return adapter.client
-      .url("/docs")
+      .url("/docs/")
       .getTitle().then(function (title) {
-        expect(title).to.eq("Victory | Documentation");
+        expect(title).to.eq("FormidableCharts | Documentation");
       });
   });
 

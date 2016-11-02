@@ -2,5 +2,8 @@
 
 module.exports = [
   "/",
-  "/about"
+  "/about/",
+  "/docs/",
+  "/docs/api/",
+  "/docs/themes/"
 ];

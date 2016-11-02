@@ -27,8 +27,11 @@ class FCHeader extends React.Component {
         }}
       >
         <div className="default" style={{textAlign: "center"}}>
-          <Link to="/about">
+          <Link to="/about/">
             About
+          </Link>
+          <Link to="/docs/">
+            Docs
           </Link>
           <a href="https://github.com/FormidableLabs/formidable-charts">
             Github
