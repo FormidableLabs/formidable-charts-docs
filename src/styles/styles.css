@@ -1,6 +1,21 @@
 @import "victory-docs/src/styles/styles.css";
 
-/* Overrides */
+/** FORMIDABLE CHARTS
+*   WHERE EVERYTHING IS AN OVERRIDE
+*/
+
+/**
+* COMPONENTS
+* Discrete components of the page: such as navigation, alert dialogs, buttons, etc.
+* Any new feature or component will be added to this section.
+*
+* sidebar:      add dark sidebar
+*/
+@import "./components/sidebar.css";
+
+/**
+* MANUAL OVERRIDES
+*/
 
 #content > div { /* Enable sticky footer */
   display: flex;

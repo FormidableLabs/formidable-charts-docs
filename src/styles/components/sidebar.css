@@ -1,0 +1,31 @@
+.Page-sidebar--dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.Sidebar-Heading--dark {
+  color: var(--lightestGray);
+  letter-spacing: 0.015em;
+}
+
+.Sidebar--dark a:link {
+  color: var(--lightestSand);
+}
+
+.Sidebar--dark a:active,
+.Sidebar--dark a:visited {
+  color: var(--lighterGray);
+}
+
+.Sidebar--dark a.is-active {
+  color: var(--lightestSand);
+  font-weight: 700;
+}
+
+.Sidebar--dark a:hover {
+  color: #dc7a6b;
+}
+
+.Sidebar--dark .Sidebar-toc-item > .Sidebar-toc {
+  border-color: rgba(255, 255, 255, 0.25);
+}

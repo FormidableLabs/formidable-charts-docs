@@ -119,10 +119,10 @@ class Sidebar extends React.Component {
   render() {
     /* eslint-disable max-len */
     return (
-      <div className="Page-sidebar">
-        <nav className="Sidebar">
+      <div className="Page-sidebar Page-sidebar--dark">
+        <nav className="Sidebar--dark">
           <div className="Sidebar-Grid">
-            <p className="Sidebar-Heading u-noMargin u-noPadding">
+            <p className="Sidebar-Heading Sidebar-Heading--dark u-noMargin u-noPadding">
               Documentation
             </p>
             {this.renderList(this.props.docs, "docs", "base")}
