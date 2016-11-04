@@ -28,12 +28,89 @@
   padding: 0 var(--page) var(--gutter);
 }
 
-@media (--medium-viewport) {
-  .medium-Grid--1of2 > .Grid-cell {
-      flex: 0 0 50%;
-  }
+.Home-intro {
+  margin: 0 auto;
+  max-width: 65em;
+  padding: var(--gutter);
 }
 
-.u-textRight {
-  text-align: right !important;
+/* text */
+.Heading--large {
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.fancyLink {
+  border-style: solid;
+  border-width: 39px 41px;
+  /* TODO: Figure out how to import this static asset */
+  /*border-image-source: url("victory-docs/static/btn-border.svg");*/
+  border-image-slice: 39 41;
+  border-image-repeat: repeat stretch;
+  display: inline-block;
+  font-family: var(--fontSubHeading);
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 30px 24px;
+  width: 100%;
+  transition: color 300ms ease-out;
+}
+/* Dark Button */
+.btn--dark:link,
+.btn--dark:visited,
+.btn--dark:active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn--dark:hover {
+  background-color: var(--nearBlack);
+  color: var(--lightestSand);
+}
+
+/* Gray Button */
+.btn--gray:hover {
+  background-color: #D9D6D4;
+}
+
+/* Comparison Table */
+.Table {
+  margin: var(--gutter-small) var(--gutter-small) 0 0;
+  max-width: 20em;
+  font-size: 1.2em;
+}
+
+.Table th {
+  padding: 3em 1.75em;
+}
+
+.Table td {
+  background-color: var(--lightestSand);
+  font-weight: 600;
+  text-align: center;
+}
+
+.Table th,
+.Table td {
+  border-color: #D9D6D4;
+}
+
+.Table-td--same {
+  background-color: var(--lightSand) !important;
+  color: var(--black);
+  font-weight: 400 !important;
+}
+
+.Table--fc th {
+  border-color: var(--black);
+  background-color: var(--nearBlack);
+  color: var(--lightestSand);
+}
+
+.Table--v th {
+  background-color: #D9D6D4;
+  border-color: #D1CFCD;
 }

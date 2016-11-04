@@ -6,6 +6,7 @@ import Icon from "victory-docs/src/components/icon";
 // Child components
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import Comparison from "./components/comparison";
 
 class About extends React.Component {
   render() {
@@ -13,9 +14,9 @@ class About extends React.Component {
       <TitleMeta title="FormidableCharts | About">
         <Header />
         <article className="Article">
-          <h1 className="u-noMargin">
-            FormidableCharts
-          </h1>
+          <h2 className="u-noMargin">
+            About FormidableCharts
+          </h2>
           <p>
             {/*
               * TODO: Customize these buttons
@@ -26,8 +27,8 @@ class About extends React.Component {
             <iframe src="https://ghbtns.com/github-btn.html?user=formidablelabs&repo=formidable-charts&type=fork&count=true&size=large" frameBorder="0" scrolling="0" width="158px" height="30px"></iframe>
           </p>
           <p>
-            FormidableCharts is a library that provides quick, composed, charts out-of-the-box for React and other Javascript projects.
-            Spend less time fiddling with styles and themes thanks to FormidableCharts' easy built-in stylistic and behavioral theming.
+            FormidableCharts is a library that provides quick, readymade charts out-of-the-box for React and other Javascript projects.
+            Spend less time with styles and themes thanks to FormidableCharts&rsquo; easy built-in stylistic and behavioral theming.
             Compatible with React Native so that you can bring your charts to iOS and Android.
           </p>
           <p>
@@ -35,9 +36,10 @@ class About extends React.Component {
               See contributors to FormidableCharts <Icon glyph="external-link" />
             </a>
           </p>
-          <h1>
+          <Comparison/>
+          <h2>
             About Formidable
-          </h1>
+          </h2>
           <p>
             Formidable is a Seattle-based consultancy and development shop, focused on open-source, full-stack JavaScript
             using React.js and Node.js, and the architecture of large-scale JavaScript applications. We build products for
