@@ -119,20 +119,29 @@ class Sidebar extends React.Component {
   render() {
     /* eslint-disable max-len */
     return (
-      <div className="Page-sidebar Page-sidebar--dark">
+      <div className="Page-sidebar Page-sidebar--dark Page-sidebar--narrow">
         <nav className="Sidebar--dark">
           <div className="Sidebar-Grid">
             <p className="Sidebar-Heading Sidebar-Heading--dark u-noMargin u-noPadding">
-              Documentation
+              Introduction
             </p>
-            {this.renderList(this.props.docs, "docs", "base")}
-            <ul className="Sidebar-List">
+            {this.renderList(this.props.docs, "docs", "introduction")}
+            <ul className="Sidebar-List u-noMargin">
               <li className="Sidebar-List-Item">
                 <a href="https://github.com/FormidableLabs/formidable-charts/#contributing">
                   Contributing <Icon glyph="external-link" />
                 </a>
               </li>
+              <li className="Sidebar-List-Item">
+                <Link to="/about/" activeClassName="is-active">
+                  About <Icon glyph="internal-link" />
+                </Link>
+              </li>
             </ul>
+            <p className="Sidebar-Heading Sidebar-Heading--dark u-noMargin">
+              Documentation
+            </p>
+            {this.renderList(this.props.docs, "docs", "base")}
           </div>
         </nav>
       </div>

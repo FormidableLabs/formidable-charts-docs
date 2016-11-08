@@ -1,6 +1,12 @@
 .Page-sidebar--dark {
-  background-color: var(--black);
+  background-color: #151314;
   color: var(--white);
+}
+
+@media (--medium-viewport) {
+  .Page-sidebar--narrow {
+    flex: 0 0 220px;
+  }
 }
 
 .Sidebar-Heading--dark {

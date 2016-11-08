@@ -4,19 +4,21 @@ import React from "react";
 import TitleMeta from "victory-docs/src/components/title-meta";
 import Icon from "victory-docs/src/components/icon";
 // Child components
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Page from "../../components/page";
 import Comparison from "./components/comparison";
 
 class About extends React.Component {
   render() {
     return (
       <TitleMeta title="FormidableCharts | About">
-        <Header />
-        <article className="Article">
-          <h2 className="u-noMargin">
+        <Page
+          location={this.props.location}
+          sidebar="about"
+          tocArray={[]}
+        >
+          <h1 className="u-noMargin">
             About FormidableCharts
-          </h2>
+          </h1>
           <p>
             {/*
               * TODO: Customize these buttons
@@ -46,11 +48,14 @@ class About extends React.Component {
             some of the world’s biggest companies, while helping their internal teams develop smart, thoughtful, and
             scalable systems.
           </p>
-        </article>
-        <Footer />
+        </Page>
       </TitleMeta>
     );
   }
 }
+
+About.propTypes = {
+  location: React.PropTypes.object
+};
 
 export default About;

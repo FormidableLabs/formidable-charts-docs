@@ -4,9 +4,9 @@ import Themes from "formidable-charts/docs/themes.md";
 
 export const config = [
   {
-    text: "FormidableCharts",
+    text: "Getting Started",
     slug: "index",
-    category: "base",
+    category: "introduction",
     docs: Index
   },
   {
