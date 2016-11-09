@@ -1,0 +1,9 @@
+class MyLineChart extends React.Component {
+ render() {
+   return (
+     <LineChart />
+   );
+ }
+}
+
+ReactDOM.render(<MyLineChart/>, mountNode);
