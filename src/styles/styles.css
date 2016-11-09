@@ -43,8 +43,6 @@
 .fancyLink {
   border-style: solid;
   border-width: 39px 41px;
-  /* TODO: Figure out how to import this static asset */
-  /*border-image-source: url("victory-docs/static/btn-border.svg");*/
   border-image-slice: 39 41;
   border-image-repeat: repeat stretch;
   display: inline-block;
@@ -58,6 +56,21 @@
   width: 100%;
   transition: color 300ms ease-out;
 }
+
+.fancyLink:link {
+  border-image-source: svg-load("../../static/btn-border.svg", fill: var(--darkRed));
+}
+
+.fancyLink:visited {
+  color: var(--darkRed);
+}
+
+.fancyLink:focus,
+.fancyLink:hover {
+  border-image-source: svg-load("../../static/btn-border.svg", fill: var(--darkGray));
+  color: var(--black);
+}
+
 /* Dark Button */
 .btn--dark:link,
 .btn--dark:visited,

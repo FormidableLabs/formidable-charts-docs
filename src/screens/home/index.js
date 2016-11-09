@@ -1,10 +1,17 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { Link } from "react-router";
+import Playground from "component-playground";
+import { LineChart } from "formidable-charts";
 
 // Dox Dependencies
 import TitleMeta from "victory-docs/src/components/title-meta";
+import Icon from "victory-docs/src/components/icon";
 // FormidableCharts
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+
+const HeroExample = require("raw!./examples/hero.example");
 
 class Home extends React.Component {
   render() {
@@ -30,51 +37,59 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="Installer">
-              <code className="Installer-code">
-                npm install formidable-charts
-              </code>
+
+            <div className="Interactive u-noMargin u-padding">
+              <Playground
+                codeText={HeroExample}
+                scope={{React, ReactDOM, LineChart}}
+                noRender={false}
+                theme="elegant"
+              />
             </div>
-            <p className="u-textCenter">
-              Or, for native:
-            </p>
-            <div className="Installer">
-              <code className="Installer-code">
-                npm install -native formidable-charts react-native-svg --save
-              </code>
+
+            <div className="u-padding">
+              <div className="Installer">
+                <code className="Installer-code">
+                  npm install formidable-charts
+                </code>
+              </div>
+              <p className="u-textCenter">
+                Or, for native:
+              </p>
+              <div className="Installer">
+                <code className="Installer-code">
+                  npm install -native formidable-charts react-native-svg --save
+                </code>
+              </div>
             </div>
-            {/*
-              TODO: example gif added here once Ken has some updated ones in docs... or use component playground?
-              https://github.com/FormidableLabs/formidable-charts-docs/issues/20
-            */}
+
             <div className="Container">
-              {/* TODO: Add getting started button
-              <div className="Benefits-btn">
-                <Link to="/docs" className="fancyLink">
-                  Get Started <Icon glyph="internal-link" />
+              <div className="u-textCenter">
+                <Link to="/docs/" className="fancyLink">
+                  Get Started&nbsp;<Icon glyph="internal-link" />
                 </Link>
               </div>
-              */}
-              <div className="u-paddingSm">
-                <div className="Grid Grid--gutters Grid--full medium-Grid--1of3">
-                  <div className="Grid-cell u-textCenter">
-                    <h3>Prebuilt</h3>
-                    <p>
-                      Create the charts you need quickly without fitting the pieces together yourself.
-                    </p>
-                  </div>
-                  <div className="Grid-cell u-textCenter">
-                    <h3>Themed</h3>
-                    <p>
-                      Give all of your charts a consistent look with our easy, built-in themes. Spend less time styling, more time building.
-                    </p>
-                  </div>
-                  <div className="Grid-cell u-textCenter">
-                    <h3>Native</h3>
-                    <p>
-                      Extend the FormidableCharts experience on iOS or Android platforms with an identical API.
-                    </p>
-                  </div>
+            </div>
+
+            <div className="Container">
+              <div className="Grid Grid--gutters Grid--full medium-Grid--1of3">
+                <div className="Grid-cell u-textCenter">
+                  <h3>Prebuilt</h3>
+                  <p>
+                    Create the charts you need quickly without fitting the pieces together yourself.
+                  </p>
+                </div>
+                <div className="Grid-cell u-textCenter">
+                  <h3>Themed</h3>
+                  <p>
+                    Give all of your charts a consistent look with our easy, built-in themes. Spend less time styling, more time building.
+                  </p>
+                </div>
+                <div className="Grid-cell u-textCenter">
+                  <h3>Native</h3>
+                  <p>
+                    Extend the FormidableCharts experience on iOS or Android platforms with an identical API.
+                  </p>
                 </div>
               </div>
             </div>
