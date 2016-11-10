@@ -11,15 +11,6 @@ class ComparisonChart extends React.Component {
         <h2>
           When should I use FormidableCharts versus Victory?
         </h2>
-        <p>
-          We wanted to provide developers with multiple charting options for their projects.
-        </p>
-        <p>
-          FormidableCharts is quick and easy to implement! Focus on the data with pre-built charts.
-        </p>
-        <p>
-          Victory is much more flexible, allowing users to create fully custom charts that integrate seamlessly with the look and feel of a project.
-        </p>
         <div className="Grid Grid--guttersSm">
           <div className="Grid-cell Grid-cell--autoSize">
             <table className="Table Table--fc">

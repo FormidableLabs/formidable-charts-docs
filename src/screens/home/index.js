@@ -21,7 +21,7 @@ class Home extends React.Component {
         <div className="u-bgColor">
           <section className="Home playgroundsMaxHeight">
             <h1 className="Heading Heading--large">
-              Quick and robust charts out of the box
+              React Charts, Out of the Box
             </h1>
             <div className="Home-intro">
               <div className="Grid Grid--gutters Grid--full medium-Grid--fit u-textLarge">

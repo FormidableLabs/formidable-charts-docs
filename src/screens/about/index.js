@@ -29,7 +29,7 @@ class About extends React.Component {
             <iframe src="https://ghbtns.com/github-btn.html?user=formidablelabs&repo=formidable-charts&type=fork&count=true&size=large" frameBorder="0" scrolling="0" width="158px" height="30px"></iframe>
           </p>
           <p>
-            FormidableCharts is a library that provides quick, readymade charts out-of-the-box for React and other Javascript projects.
+            FormidableCharts is a library that provides a quick charting option out of the box for React and other Javascript projects.
             Spend less time with styles and themes thanks to FormidableCharts&rsquo; easy built-in stylistic and behavioral theming.
             Compatible with React Native so that you can bring your charts to iOS and Android.
           </p>
