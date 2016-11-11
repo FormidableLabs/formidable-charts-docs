@@ -38,7 +38,7 @@ class Home extends React.Component {
               </div>
             </div>
 
-            <div className="Interactive u-noMargin u-padding">
+            <div className="Interactive u-noMargin">
               <Playground
                 codeText={HeroExample}
                 scope={{React, ReactDOM, LineChart}}
@@ -47,7 +47,7 @@ class Home extends React.Component {
               />
             </div>
 
-            <div className="u-padding">
+            <div className="Home-installers">
               <div className="Installer">
                 <code className="Installer-code">
                   npm install formidable-charts

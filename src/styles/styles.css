@@ -25,19 +25,27 @@
 .Home {
   flex: 1 0 auto; /* Enable sticky footer */
   margin: 0 auto;
-  padding: 0 var(--page) var(--gutter);
+  padding: 0 var(--page) var(--gutter-small);
 }
 
 .Home-intro {
   margin: 0 auto;
   max-width: 65em;
-  padding: var(--gutter);
+  padding: var(--gutter) var(--gutter-small);
+}
+
+.Home-installers {
+  margin-top: var(--gutter);
 }
 
 /* text */
 .Heading--large {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-style: italic;
+
+  @media (--medium-viewport) {
+    font-size: 3.5rem;
+  }
 }
 
 .fancyLink {
