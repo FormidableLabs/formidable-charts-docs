@@ -37,15 +37,20 @@ class Docs extends React.Component {
   }
 
   renderContent(activePage) {
-    const markdownFile = find(config, { slug: activePage }).docs;
+    const conf = find(config, { slug: activePage });
+    const markdownDocs = conf.docs;
+    const editUrl = `https://github.com/FormidableLabs/formidable-charts/blob/master/docs/${activePage}.md`;
 
     return (
-      <Markdown
-        location={this.props.location}
-        updateTocArray={this.updateTocArray.bind(this)}
-        active={activePage}
-        markdownFile={markdownFile}
-      />
+      <div>
+        <a href={editUrl} className="SubHeading">Edit this page</a>
+        <Markdown
+          location={this.props.location}
+          updateTocArray={this.updateTocArray.bind(this)}
+          active={activePage}
+          markdownFile={markdownDocs}
+        />
+      </div>
     );
   }
 
