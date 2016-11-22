@@ -12,6 +12,7 @@ import yaml from "prismjs/components/prism-yaml";
 import Markdown from "victory-docs/src/components/markdown";
 import TitleMeta from "victory-docs/src/components/title-meta";
 // Child components
+import basename from "../../basename";
 import { config } from "../../components/config";
 import Page from "../../components/page";
 
@@ -45,10 +46,11 @@ class Docs extends React.Component {
       <div>
         <a href={editUrl} className="SubHeading">Edit this page</a>
         <Markdown
-          location={this.props.location}
-          updateTocArray={this.updateTocArray.bind(this)}
           active={activePage}
+          basename={basename}
+          location={this.props.location}
           markdownFile={markdownDocs}
+          updateTocArray={this.updateTocArray.bind(this)}
         />
       </div>
     );

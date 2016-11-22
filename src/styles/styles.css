@@ -22,6 +22,10 @@
   flex-direction: column;
 }
 
+.formidableHeader.victory.fc .formidableHeader-by {
+  text-indent: 2px;
+}
+
 .Home {
   flex: 1 0 auto; /* Enable sticky footer */
   margin: 0 auto;
