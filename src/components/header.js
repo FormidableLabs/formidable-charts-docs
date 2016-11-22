@@ -1,5 +1,4 @@
 import React from "react";
-import Radium from "radium";
 import { Link } from "react-router";
 
 // Common
@@ -8,8 +7,6 @@ import LOGO from "../../static/logotype.svg";
 
 class FCHeader extends React.Component {
   render() {
-    const padding = this.props.home ? "60px 0" : "40px 0";
-
     const formidableChartsLogo = (
       <Link
         dangerouslySetInnerHTML={{ __html: LOGO }}
@@ -19,12 +16,8 @@ class FCHeader extends React.Component {
 
     return (
       <Header
+        className="victory fc"
         logoProject={formidableChartsLogo}
-        padding={padding}
-        styleContainer={{
-          marginRight: "3vw",
-          marginLeft: "3vw"
-        }}
       >
         <div className="default" style={{textAlign: "center"}}>
           <Link to="/about/">
@@ -51,4 +44,4 @@ FCHeader.defaultProps = {
 };
 
 
-export default Radium(FCHeader);
+export default FCHeader;

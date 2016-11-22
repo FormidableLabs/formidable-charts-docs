@@ -1,5 +1,4 @@
 import React from "react";
-import Radium from "radium";
 
 // Common
 import { Footer } from "formidable-landers";
@@ -8,12 +7,7 @@ class FCFooter extends React.Component {
   render() {
     return (
       <Footer
-        style={{
-          margin: 0
-        }}
-        styleContainer={{
-          margin: "0 3vw"
-        }}
+        className="victory"
         theme="dark"
       />
     );
@@ -29,4 +23,4 @@ FCFooter.defaultProps = {
 };
 
 
-export default Radium(FCFooter);
+export default FCFooter;
