@@ -46,7 +46,7 @@
     "prismjs": "^1.5.1",
     "radium": "0.17.2",
     "react": "^15.1.0",
-    "react-addons-test-utils": "^15.1.0",
+    "react-addons-test-utils": "^15.5.0",
     "react-document-meta": "^2.0.3",
     "react-dom": "^15.1.0",
     "react-ga": "^2.1.1",
