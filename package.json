@@ -37,7 +37,7 @@
     "builder": "^3.1.0",
     "builder-docs-archetype": "^5.0.0",
     "chai": "^3.2.0",
-    "component-playground": "^1.3.1",
+    "component-playground": "^2.1.0",
     "formidable-charts": "0.0.6",
     "formidable-landers": "^6.0.1",
     "history": "^3.0.0",
