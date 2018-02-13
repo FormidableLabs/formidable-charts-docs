@@ -42,7 +42,7 @@
     "formidable-landers": "^6.0.1",
     "history": "^3.0.0",
     "lodash": "^4.6.1",
-    "mocha": "^3.1.2",
+    "mocha": "^5.0.1",
     "prismjs": "^1.5.1",
     "radium": "0.17.2",
     "react": "^15.1.0",
